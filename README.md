@@ -20,24 +20,29 @@ This project uses Sentinel-2 surface reflectance imagery to classify cloud cover
 - Accuracy: (see classification report in notebook)
 - Most important band: Green
 - Cloud mask and RGB image generated
+
 ## 🔍 Sample Outputs
 
 ### 🌤️ Predicted Cloud Mask
-![Predicted Cloud Mask](cloud_mask_output.png)
-
-### 📊 Feature Importances
-![Feature Importances](feature_importances.png)
+![Predicted Cloud Mask](Predicted%20Cloud%20Mask.png)
 
 ### 🖼️ Sentinel-2 RGB Image
-![RGB Image](rgb_image.png)
+![RGB Image](RGB%20Image.png)
 
 ### 📉 Confusion Matrix
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](Confusion%20Matrix.png)
+
+### 📊 Feature Importances
+![Feature Importances](Feature%20Importances.png)
+
+> The model relied most heavily on the Green and Blue bands, consistent with cloud reflectance patterns in the visible spectrum.
 
 ## Environmental Cost
 This project was executed on CPU using ~170,000 pixels. Model training was under 10 seconds. Estimated CO₂ footprint is negligible (<0.001 kg CO₂). No GPU or large-scale training was required.
 
 ## File List
 - `cloud_classification_project.ipynb`: Full code
-- `cloud_mask_output.png`: Final prediction
-- `feature_importances.png`: Random Forest insights
+- `Predicted Cloud Mask.png`: Final prediction
+- `RGB Image.png`: Sentinel-2 RGB visualization
+- `Confusion Matrix.png`: Evaluation of classification
+- `Feature Importances.png`: Random Forest band sensitivity
